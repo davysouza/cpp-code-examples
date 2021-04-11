@@ -5,5 +5,10 @@ Some C++ code examples
 
 * STL examples:
 ```sh
-$ g++ stl_main.cpp stl_unit_tests/*.cpp -lpthread
+$ g++ stl_ut.cpp stl_unit_tests/*.cpp -lpthread
+```
+
+* Smart pointer examples:
+```sh
+$ g++ smartpointers_ut.cpp
 ```

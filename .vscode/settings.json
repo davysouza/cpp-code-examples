@@ -48,6 +48,7 @@
     "stack": "cpp",
     "thread": "cpp",
     "vector": "cpp",
-    "xtree": "cpp"
+    "xtree": "cpp",
+    "atomic": "cpp"
   }
 }
