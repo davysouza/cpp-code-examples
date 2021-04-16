@@ -1,0 +1,23 @@
+# This is a basic workflow to help you get started with Actions
+
+name: C/C++ CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    
+    - name: STL examples
+      run: |
+        g++ ./stl_ut.cpp ./stl_unit_tests/*.cpp -lpthread
+        ./a.out
+    
+    - name: Smart Pointer examples
+      run: |
+        g++ ./smartpointers_ut.cpp
+        ./a.out
