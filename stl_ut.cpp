@@ -1,54 +1,43 @@
 #include <iostream>
 
-#include "stl_unit_tests/data_structures_uts.h"
-#include "stl_unit_tests/thread_uts.h"
+#include "stl_ut/data_structure_ut.h"
+
+using namespace std;
 
 int main() {
-  std::cout << "\n========== STL EXAMPLES ==========\n" << std::endl;
+  cout << "\n========== STL EXAMPLES ==========\n\n";
 
-  std::cout << "\n========== DATA STRUCTURES ==========\n" << std::endl;
-
-  std::cout << "std::vector..." << std::endl;
+  cout << "[vector]\n" << endl;
   vector_examples();
-  std::cout << "...done!\n" << std::endl;
+  cout << "\n    done!\n\n";
 
-  std::cout << "list..." << std::endl;
+  cout << "[list]\n";;
   list_examples();
-  std::cout << "...done!\n" << std::endl;
+  cout << "\n    done!\n\n";
 
-  std::cout << "queue..." << std::endl;
+  cout << "[queue]\n";;
   queue_examples();
-  std::cout << "...done!\n" << std::endl;
+  cout << "\n    done!\n\n";
 
-  std::cout << "stack..." << std::endl;
+  cout << "[stack]\n";;
   stack_examples();
-  std::cout << "...done!\n" << std::endl;
+  cout << "\n    done!\n\n";
 
-  std::cout << "set..." << std::endl;
+  cout << "[set]\n";;
   set_examples();
-  std::cout << "...done!\n" << std::endl;
+  cout << "\n    done!\n\n";
 
-  std::cout << "map..." << std::endl;
+  cout << "[map]\n";
   map_examples();
-  std::cout << "...done!\n" << std::endl;
+  cout << "\n    done!\n\n";
 
-  std::cout << "tuple..." << std::endl;
+  cout << "[tuple]\n";
   tuple_examples();
-  std::cout << "...done!\n" << std::endl;
+  cout << "\n    done!\n\n";
 
-  std::cout << "bitset..." << std::endl;
+  cout << "[bitset]\n";
   bitset_examples();
-  std::cout << "...done!\n" << std::endl;
-
-  std::cout << "\n========== THREADS ==========\n" << std::endl;
-
-  std::cout << "thread..." << std::endl;
-  thread_examples();
-  std::cout << "...done!\n" << std::endl;
-
-  std::cout << "atomic..." << std::endl;
-  atomic_examples();
-  std::cout << "...done!\n" << std::endl;
+  cout << "\n    done!\n\n";
 
   return 0;
 }
